@@ -27,7 +27,7 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: white;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -40,6 +40,11 @@
   animation-delay: 1s;
 }
 
+#splash-screen img {
+  width: 250px;
+  animation: rotateLogo 0.4s ease-in-out;
+}
+
 @keyframes hideSplashScreen {
   from {
     opacity: 1;
@@ -47,5 +52,23 @@
   to {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@keyframes rotateLogo {
+  20% {
+    transform: rotateZ(30deg);
+  }
+  60% {
+    transform: rotateZ(-30deg);
+  }
+  80% {
+    transform: rotateZ(15deg);
+  }
+  90% {
+    transform: rotateZ(-15deg);
+  }
+  100% {
+    transform: none;
   }
 }

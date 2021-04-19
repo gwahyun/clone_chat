@@ -45,7 +45,7 @@
 .message-row {
   width: 100%;
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .message-row img {
@@ -81,9 +81,13 @@
 }
 
 .message-row--own {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-end;
 }
-
+.message-row__content {
+  margin-bottom: 20px;
+}
 .message-row--own .message__buble {
   background-color: var(--yellow);
   border-top-right-radius: 0px;
